@@ -287,7 +287,7 @@ h6{
     <button class="btn btn-danger btn-sm btn-block" type="submit">ACTIVAR REGLA XLX</button><br>
 </form>
 <form method="post" action="dashboard.php">
-    <button class="btn btn-warning btn-sm btn-block" type="submit">VOLVER AL DASHBOARD</button>
+    <button style="font-size:10px;"class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS VOLVER AL DASHBOARD</button>
 </form>
 </div><!-- "col-md-4 -->
 <!-- =======================================================================================-->   
@@ -332,7 +332,7 @@ h6{
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA XLX</button><br>
 </form>
 <form method="post" action="dashboard.php">
-    <button class="btn btn-warning btn-sm btn-block" type="submit">VOLVER AL DASHBOARD</button>
+    <button style="font-size:10px;" class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS VOLVER AL DASHBOARD</button>
 </form>
 </div><!-- "col-md-4 -->
 <!-- =======================================================================================--> 
@@ -379,7 +379,7 @@ h6{
 
 </form>
 <form method="post" action="dashboard.php">
-    <button class="btn btn-warning btn-sm btn-block" type="submit">VOLVER AL DASHBOARD</button>
+    <button class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS Y VOLVER AL DASHBOARD</button>
 </form>
 <br>
 </div><!-- "col-md-4 -->
