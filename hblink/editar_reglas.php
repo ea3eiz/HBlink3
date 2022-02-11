@@ -328,7 +328,7 @@ h6{
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA 9</button><br>
 </form>
 
-<form method="post" action="deactivar_reglaxlx.php">
+<form method="post" action="desactivar_reglaxlx.php">
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA XLX</button><br>
 </form>
 <form method="post" action="dashboard.php">
