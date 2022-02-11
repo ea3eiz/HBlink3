@@ -1,6 +1,36 @@
 <?php 
 session_start();
 
+$location2 = exec("sed -n '240p' /opt/HBlink3/hblink.cfg");
+$location2 = substr("$location2", 10, 25);
+
+$location3 = exec("sed -n '340p' /opt/HBlink3/hblink.cfg");
+$location3 = substr("$location3", 10, 25);
+
+$location4 = exec("sed -n '440p' /opt/HBlink3/hblink.cfg");
+$location4 = substr("$location4", 10, 25);
+
+$location5 = exec("sed -n '540p' /opt/HBlink3/hblink.cfg");
+$location5 = substr("$location5", 10, 25);
+
+$location6 = exec("sed -n '640p' /opt/HBlink3/hblink.cfg");
+$location6 = substr("$location6", 10, 25);
+
+$location7 = exec("sed -n '740p' /opt/HBlink3/hblink.cfg");
+$location7 = substr("$location7", 10, 25);
+
+$location8 = exec("sed -n '840p' /opt/HBlink3/hblink.cfg");
+$location8 = substr("$location8", 10, 25);
+
+$location9 = exec("sed -n '940p' /opt/HBlink3/hblink.cfg");
+$location9 = substr("$location9", 10, 25);
+
+$locationxlx = exec("sed -n '1040p' /opt/HBlink3/hblink.cfg");
+$locationxlx = substr("$locationxlx", 10, 25);
+
+$location2 = exec("sed -n '240p' /opt/HBlink3/hblink.cfg");
+$location2 = substr("$location2", 10, 25);
+
 $indicativo = exec("sed -n '230p' /opt/HBlink3/hblink.cfg");
 $indicativo = substr("$indicativo", 9, 8);
 
@@ -197,7 +227,7 @@ background-image: url(img/fondo_02.png);
     border-radius: 8px 8px 8px 8px;
     }
     .caja3{
-    height: 560px;
+    height: 860px;
     background:rgb(55, 27, 213);
     border-radius: 8px 8px 8px 8px;
     }      
@@ -349,7 +379,6 @@ h6{
             <div class="fondo_datos">Indicativo: 
                 <span class="color_verde"><?php echo $indicativo;?></span>
             </div>         
-
 </form>
 
 <form method="post" action="configuraciones_id.php">
@@ -358,7 +387,6 @@ h6{
             <div class="fondo_datos">Id 9 cifras: 
                 <span class="color_verde"><?php echo $id;?></span>
             </div>         
-
 </form>
 
 <form method="post" action="configuraciones_password.php">
@@ -367,16 +395,67 @@ h6{
             <div class="fondo_datos">Password: 
                 <span class="color_verde"><?php echo $password;?></span>
             </div> 
-
 </form>
-<br>
 <form method="post" action="configuraciones_port.php">
 
         <input name="port" class="fuente_boton3 form-control" placeholder="Introduce Port + Enter"> 
             <div class="fondo_datos">Port: 
                 <span class="color_verde"><?php echo $port;?></span>
             </div> 
-
+</form>
+<form method="post" action="location_regla2.php">
+        <input name="location2" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 2: 
+                <span class="color_verde"><?php echo $location2;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla3.php">
+        <input name="location3" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 3: 
+                <span class="color_verde"><?php echo $location3;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla4.php">
+        <input name="location4" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 4: 
+                <span class="color_verde"><?php echo $location4;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla5.php">
+        <input name="location5" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 5: 
+                <span class="color_verde"><?php echo $location5;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla6.php">
+        <input name="location6" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 6: 
+                <span class="color_verde"><?php echo $location6;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla7.php">
+        <input name="location7" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 7: 
+                <span class="color_verde"><?php echo $location7;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla8.php">
+        <input name="location8" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 8: 
+                <span class="color_verde"><?php echo $location8;?></span>
+            </div> 
+</form>
+<form method="post" action="location_regla9.php">
+        <input name="location9" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 9: 
+                <span class="color_verde"><?php echo $location9;?></span>
+            </div> 
+</form>
+<form method="post" action="location_reglaxlx.php">
+        <input name="locationxlx" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad xlx: 
+                <span class="color_verde"><?php echo $locationxlx;?></span>
+            </div> 
 </form>
 <form method="post" action="dashboard.php">
     <button class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS Y VOLVER AL DASHBOARD</button>
