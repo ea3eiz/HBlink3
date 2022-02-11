@@ -283,7 +283,7 @@ h6{
     <button class="btn btn-danger btn-sm btn-block" type="submit">ACTIVAR REGLA 9</button><br>
 </form>
 
-<form method="post" action="activar_xlx.php">
+<form method="post" action="activar_reglaxlx.php">
     <button class="btn btn-danger btn-sm btn-block" type="submit">ACTIVAR REGLA XLX</button><br>
 </form>
 <form method="post" action="dashboard.php">
@@ -328,7 +328,7 @@ h6{
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA 9</button><br>
 </form>
 
-<form method="post" action="deactivar_xlx.php">
+<form method="post" action="deactivar_reglaxlx.php">
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA XLX</button><br>
 </form>
 <form method="post" action="dashboard.php">

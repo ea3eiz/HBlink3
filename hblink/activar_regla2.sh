@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
                         sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
                         line40=$(awk "NR==40" /opt/HBlink3/rules.py)
                         line40=${line40#"#"} #borra la primera letra de la variable
