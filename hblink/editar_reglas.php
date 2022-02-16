@@ -217,20 +217,40 @@ background-image: url(img/fondo_02.png);
     border-radius: 8px 8px 8px 8px;
     }
 .caja1{
-    height: 560px;
+    height: 520px;
     background:rgb(157,194,10);
     border-radius: 8px 8px 8px 8px;
     }
     .caja2{
-    height: 560px;
+    height: 520px;
     background:rgb(251,67,89);
     border-radius: 8px 8px 8px 8px;
     }
     .caja3{
-    height: 860px;
+    height: 520px;
+    background:#000000;
+    border-radius: 8px 0px 0px 8px;
+    }
+    .caja4{
+    height: 519px;
+    background:#000000;
+    border-radius: 0px 8px 8px 0px;
+    }
+    .caja5{
+    height: 380px;
     background:rgb(55, 27, 213);
-    border-radius: 8px 8px 8px 8px;
-    }      
+    border-radius: 8px 0px 0px 8px;
+    }
+    .caja6{
+    height: 380px;
+    background:rgb(55, 27, 213);
+    border-radius: 0px 0px 0px 0px;
+    }    
+    .caja7{
+    height: 380px;
+    background:rgb(55, 27, 213);
+    border-radius: 0px 8px 8px 0px;
+    }    
 h4{
     text-align:center;
     color:#FFFFFF;
@@ -277,8 +297,17 @@ h6{
 <div class="container"> 
 <br><br>
 
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<form method="post" action="dashboard.php">
+    <button style="font-size:18px;"class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS y VOLVER AL DASHBOARD</button>
+</form>
+</div>
+</div><!-- row -->
+<br>
 <!--============== CAJA 1 ====================================-->       
-
+<div class="row">
     <div class="col-md-3 caja1"><br>     
         <h5>ACTIVAR REGLAS</h5>
 <form method="post" action="activar_regla2.php">
@@ -316,9 +345,7 @@ h6{
 <form method="post" action="activar_reglaxlx.php">
     <button class="btn btn-danger btn-sm btn-block" type="submit">ACTIVAR REGLA XLX</button><br>
 </form>
-<form method="post" action="dashboard.php">
-    <button style="font-size:10px;"class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS VOLVER AL DASHBOARD</button>
-</form>
+
 </div><!-- "col-md-4 -->
 <!-- =======================================================================================-->   
 
@@ -361,17 +388,43 @@ h6{
 <form method="post" action="desactivar_reglaxlx.php">
     <button class="btn btn-success btn-sm btn-block" type="submit">DESACTIVAR REGLA XLX</button><br>
 </form>
-<form method="post" action="dashboard.php">
-    <button style="font-size:10px;" class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS VOLVER AL DASHBOARD</button>
-</form>
-</div><!-- "col-md-4 -->
-<!-- =======================================================================================--> 
 
-<!--============== CAJA 3 CONFIGURACIONES ==================================================================--> 
-      
+
+</div><!-- "col-md-4 -->
+<!-- =======================================================================================-->
+
+<!--============== CAJA 3 ==================================================================-->       
 <div class="col-md-1"></div>
-    <div class="col-md-4 caja3"><br>     
-        <h5>CONFIGURACIONES</h5>
+    <div class="col-md-2 caja3"><br>     
+        <h5>A DEMANDA</h5>
+
+<form method="post" action="regla4_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 4</button><br>
+</form>
+
+
+</div><!-- "col-md-4 -->
+<!-- =======================================================================================-->
+
+<!--============== CAJA 4 ==================================================================-->       
+<div class="col-md-1"></div>
+    <div class="col-md-2 caja4"><br>     
+        <h5>PERMANENTE</h5>
+
+<form method="post" action="regla4_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 4</button><br>
+</form>
+
+</div><!-- "col-md-4 -->
+</div><!-- row -->
+<!-- =======================================================================================-->
+<br>
+
+<!--============== CAJA 5 CONFIGURACIONES ==================================================================--> 
+     
+<div class="row">
+    <div class="col-md-4 caja5"><br>     
+        <h5>CONFIGURACIÓN GENERAL</h5>
   
 <form method="post" action="configuraciones_indicativo.php">
 
@@ -403,36 +456,72 @@ h6{
                 <span class="color_verde"><?php echo $port;?></span>
             </div> 
 </form>
+
+
+
+<br>
+</div><!-- "col-md-4 -->
+<!-- =======================================================================================-->
+
+<!--============== CAJA 6 CONFIGURACIONES ==================================================================--> 
+     
+    <div class="col-md-4 caja6"><br>     
+    <h5>CONFIGURA LOCATIONS</h5>   
+
 <form method="post" action="location_regla2.php">
         <input name="location2" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
-            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 2: 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 2: 
                 <span class="color_verde"><?php echo $location2;?></span>
             </div> 
 </form>
 <form method="post" action="location_regla3.php">
         <input name="location3" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
-            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 3: 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 3: 
                 <span class="color_verde"><?php echo $location3;?></span>
             </div> 
 </form>
 <form method="post" action="location_regla4.php">
         <input name="location4" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
-            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 4: 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 4: 
                 <span class="color_verde"><?php echo $location4;?></span>
             </div> 
 </form>
 <form method="post" action="location_regla5.php">
         <input name="location5" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
-            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 5: 
+            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 5: 
                 <span class="color_verde"><?php echo $location5;?></span>
             </div> 
 </form>
 <form method="post" action="location_regla6.php">
         <input name="location6" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
-            <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad regla 6: 
+            <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 6: 
                 <span class="color_verde"><?php echo $location6;?></span>
             </div> 
 </form>
+
+<br>
+</div><!-- "col-md-4 -->
+<!-- =======================================================================================-->
+
+
+
+
+<!--============== CAJA 7 CONFIGURACIONES ==================================================================--> 
+      
+
+    <div class="col-md-4 caja7"><br>     
+    <h5>CONFIGURA LOCATIONS</h5>
+  
+
+
+
+
+
+
+
+
+
+
 <form method="post" action="location_regla7.php">
         <input name="location7" class="fuente_boton3 form-control" placeholder="Introduce Ciudad + Enter"> 
             <div style="background: rgb(15,64,145);" class="fondo_datos">Ciudad regla 7: 
@@ -456,18 +545,13 @@ h6{
             <div style="background: rgb(143,125,114);" class="fondo_datos">Ciudad xlx: 
                 <span class="color_verde"><?php echo $locationxlx;?></span>
             </div> 
-</form>
-<form method="post" action="dashboard.php">
-    <button class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS Y VOLVER AL DASHBOARD</button>
-</form>
+
 <br>
 </div><!-- "col-md-4 -->
 
 </div><!-- row -->
 
 <!-- =======================================================================================-->
-
-
 
 </div><!-- container -->
 
