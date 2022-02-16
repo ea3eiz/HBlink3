@@ -18,7 +18,6 @@
     line63=${line63#"#"} #borra la primera letra de la variable
     sed -i "63c $line63" /opt/HBlink3/rules.py
 
-    sudo sed -i "161c PASSPHRASE: $pass" /opt/HBlink3/hblink.cfg
 
 
 
