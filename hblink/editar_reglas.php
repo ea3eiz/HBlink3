@@ -238,7 +238,7 @@ background-image: url(img/fondo_02.png);
     }
     .caja5{
     height: 380px;
-    background:rgb(55, 27, 213);
+    background:rgb(56,46,48);
     border-radius: 8px 0px 0px 8px;
     }
     .caja6{
@@ -297,13 +297,41 @@ h6{
 <div class="container"> 
 <br><br>
 
+
+
 <div class="row">
+
 <div class="col-md-3"></div>
+<div class="col-md-6">
+<form method="post" action="editar_reglas_cambios.php">
+    <button style="font-size:18px;"class="btn btn-warning btn-sm btn-block" type="submit">CAMBIAR NOMBRE Y TGS A LAS REGLAS</button>
+</form>
+</div>
+
+</div><!-- row -->
+
+
+<br><br>
+
+
+
+
+
+
+<div class="row">
+
 <div class="col-md-6">
 <form method="post" action="dashboard.php">
     <button style="font-size:18px;"class="btn btn-warning btn-sm btn-block" type="submit">RESTAURAR SERVICIOS y VOLVER AL DASHBOARD</button>
 </form>
 </div>
+
+<div class="col-md-6">
+<form method="post" action="dashboard_sin_cambios.php">
+    <button style="font-size:18px;"class="btn btn-success btn-sm btn-block" type="submit">VOLVER AL DASHBOARD SIN CAMBIOS</button>
+</form>
+</div>
+
 </div><!-- row -->
 <br>
 <!--============== CAJA 1 ====================================-->       
@@ -398,8 +426,40 @@ h6{
     <div class="col-md-2 caja3"><br>     
         <h5>A DEMANDA</h5>
 
+<form method="post" action="regla2_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 2</button><br>
+</form>
+
+<form method="post" action="regla3_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 3</button><br>
+</form>
+
 <form method="post" action="regla4_demanda.php">
     <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 4</button><br>
+</form>
+
+<form method="post" action="regla5_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 5</button><br>
+</form>
+
+<form method="post" action="regla6_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 6</button><br>
+</form>
+
+<form method="post" action="regla7_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 7</button><br>
+</form>
+
+<form method="post" action="regla8_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 8</button><br>
+</form>
+
+<form method="post" action="regla9_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA 9</button><br>
+</form>
+
+<form method="post" action="reglaxlx_demanda.php">
+    <button class="btn btn-danger btn-sm btn-block" type="submit">REGLA XLX</button><br>
 </form>
 
 
@@ -411,8 +471,40 @@ h6{
     <div class="col-md-2 caja4"><br>     
         <h5>PERMANENTE</h5>
 
+<form method="post" action="regla2_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 2</button><br>
+</form>
+
+<form method="post" action="regla3_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 3</button><br>
+</form>
+
 <form method="post" action="regla4_permanente.php">
     <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 4</button><br>
+</form>
+
+<form method="post" action="regla5_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 5</button><br>
+</form>
+
+<form method="post" action="regla6_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 6</button><br>
+</form>
+
+<form method="post" action="regla7_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 7</button><br>
+</form>
+
+<form method="post" action="regla8_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 8</button><br>
+</form>
+
+<form method="post" action="regla9_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA 9</button><br>
+</form>
+
+<form method="post" action="reglaxlx_permanente.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">REGLA XLX</button><br>
 </form>
 
 </div><!-- "col-md-4 -->
@@ -552,6 +644,19 @@ h6{
 </div><!-- row -->
 
 <!-- =======================================================================================-->
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
 
 </div><!-- container -->
 

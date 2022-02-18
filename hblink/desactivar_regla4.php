@@ -11,8 +11,3 @@ header("Location:editar_reglas.php");
     header("Location:_aviso_regla_desactivada.php");
 }
 ?>
-
-
-
-
-	

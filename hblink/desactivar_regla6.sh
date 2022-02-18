@@ -14,5 +14,7 @@
                         line83=$(awk "NR==83" /opt/HBlink3/rules.py)
                         sudo sed -i "83c #$line83" /opt/HBlink3/rules.py
 
+                        sudo sed -i "6c REGLA6=OFF" /var/www/html/hblink/status_reglas.cfg
+
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink

@@ -1,6 +1,5 @@
 #!/bin/bash
-
-                        sudo sed -i "1022c ENABLED: False" /opt/HBlink3/hblink.cfg # OJO CAMBIAR POR SU NUMERO ********
+                        sudo sed -i "1022c ENABLED: False" /opt/HBlink3/hblink.cfg 
 
                         line120=$(awk "NR==120" /opt/HBlink3/rules.py)
                         sudo sed -i "120c #$line120" /opt/HBlink3/rules.py
@@ -16,6 +15,8 @@
 
                         line124=$(awk "NR==124" /opt/HBlink3/rules.py)
                         sudo sed -i "124c #$line124" /opt/HBlink3/rules.py
+
+                        sudo sed -i "10c REGLAXLX=OFF" /var/www/html/hblink/status_reglas.cfg
 
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink

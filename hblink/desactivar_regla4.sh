@@ -1,8 +1,4 @@
 #!/bin/bash
-                        #
-                        #
-                        #
-
                         sudo sed -i "422c ENABLED: False" /opt/HBlink3/hblink.cfg
 
                         line60=$(awk "NR==60" /opt/HBlink3/rules.py)
@@ -21,7 +17,3 @@
 
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
-
-                        #else
-                        #echo "no hace nada"
-                        #fi

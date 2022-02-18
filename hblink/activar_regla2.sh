@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/bash              
+                        sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg 
 
-                        sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
                         line40=$(awk "NR==40" /opt/HBlink3/rules.py)
                         line40=${line40#"#"} #borra la primera letra de la variable
                         sudo sed -i "40c $line40" /opt/HBlink3/rules.py
@@ -17,7 +17,7 @@
                         line43=${line43#"#"} #borra la primera letra de la variable
                         sudo sed -i "43c $line43" /opt/HBlink3/rules.py
                         
+                        sudo sed -i "2c REGLA2=ON" /var/www/html/hblink/status_reglas.cfg
+
                         sudo systemctl restart hbmon
-                        sudo systemctl restart hblink
-                        
-                        
+                        sudo systemctl restart hblink                                          

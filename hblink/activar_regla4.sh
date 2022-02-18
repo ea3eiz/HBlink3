@@ -1,8 +1,4 @@
 #!/bin/bash
-                        activa=$(awk "NR==4" /var/www/html/hblink/status_reglas.cfg)
-                        if [ $activa = 'REGLA4=OFF' ]
-                        then
-
     sudo sed -i "422c ENABLED: True" /opt/HBlink3/hblink.cfg
 
     line60=$(awk "NR==60" /opt/HBlink3/rules.py)
@@ -21,12 +17,7 @@
     line63=${line63#"#"} #borra la primera letra de la variable
     sed -i "63c $line63" /opt/HBlink3/rules.py
 
+    sudo sed -i "4c REGLA4=ON" /var/www/html/hblink/status_reglas.cfg
 
-                        sudo sed -i "4c REGLA4=ON" /var/www/html/hblink/status_reglas.cfg
-
-                        sudo systemctl restart hbmon
-                        sudo systemctl restart hblink
-
-                        else
-                        echo "no hace nada"
-                        fi
+    sudo systemctl restart hbmon
+    sudo systemctl restart hblink
