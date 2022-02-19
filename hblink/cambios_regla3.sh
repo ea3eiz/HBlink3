@@ -22,7 +22,7 @@ password1="PASSPHRASE: "
 password=$password1$password
 
 options=$(awk "NR==9" /var/www/html/hblink/status_regla3.cfg)
-options1="OPTIONS"
+options1="OPTIONS: "
 options=$options1$options #OPTIONS: StartRef=4000;Relinktime=15;TS2_1=21465
 
 sudo sed -i "320c $nombrehblink" /opt/HBlink3/hblink.cfg
