@@ -59,7 +59,7 @@ BRIDGES = {
         #regla 4
 ], 
 'DMR+4374': [
-{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4374, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [4374], 'OFF': [84374], 'RESET': []},
+{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4374, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4374], 'OFF': [84374], 'RESET': []},
 {'SYSTEM': 'DMR+4374', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
@@ -109,7 +109,7 @@ BRIDGES = {
         #regla 9
 ],
 'BRANDMEISTER': [
-{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [21465], 'OFF': [821465], 'RESET': []},
+{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
 {'SYSTEM': 'BRANDMEISTER', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
     
 
