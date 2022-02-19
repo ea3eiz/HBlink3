@@ -88,9 +88,9 @@ BRIDGES = {
         
         #regla 7
 ],
-'DMR+4377': [
-{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4377, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4377], 'OFF': [84377], 'RESET': []},
-{'SYSTEM': 'DMR+4377', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+'DMR+4371': [
+{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4371, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4371], 'OFF': [84371], 'RESET': []},
+{'SYSTEM': 'DMR+4371', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
         
@@ -98,9 +98,9 @@ BRIDGES = {
         
         #regla 8
 ],
-'DMR+4378': [
-{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4378, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4378], 'OFF': [84378], 'RESET': []},
-{'SYSTEM': 'DMR+4378', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+'DMR+4373': [
+{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4373, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4373], 'OFF': [84373], 'RESET': []},
+{'SYSTEM': 'DMR+4373', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
         
