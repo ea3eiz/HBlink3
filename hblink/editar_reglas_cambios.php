@@ -54,6 +54,26 @@ $puerto6 = exec("sed -n '7p' /var/www/html/hblink/status_regla6.cfg");
 $password6 = exec("sed -n '8p' /var/www/html/hblink/status_regla6.cfg");
 $options6 = exec("sed -n '9p' /var/www/html/hblink/status_regla6.cfg");
 
+$nombre7 = exec("sed -n '1p' /var/www/html/hblink/status_regla7.cfg");
+$demandapermanente7 = exec("sed -n '2p' /var/www/html/hblink/status_regla7.cfg");
+$tgconexion7 = exec("sed -n '3p' /var/www/html/hblink/status_regla7.cfg");
+$tgdesconexion7 = exec("sed -n '4p' /var/www/html/hblink/status_regla7.cfg");
+$tgsalida7 = exec("sed -n '5p' /var/www/html/hblink/status_regla7.cfg");
+$masterip7 = exec("sed -n '6p' /var/www/html/hblink/status_regla7.cfg");
+$puerto7 = exec("sed -n '7p' /var/www/html/hblink/status_regla7.cfg");
+$password7 = exec("sed -n '8p' /var/www/html/hblink/status_regla7.cfg");
+$options7 = exec("sed -n '9p' /var/www/html/hblink/status_regla7.cfg");
+
+$nombre8 = exec("sed -n '1p' /var/www/html/hblink/status_regla8.cfg");
+$demandapermanente8 = exec("sed -n '2p' /var/www/html/hblink/status_regla8.cfg");
+$tgconexion8 = exec("sed -n '3p' /var/www/html/hblink/status_regla8.cfg");
+$tgdesconexion8 = exec("sed -n '4p' /var/www/html/hblink/status_regla8.cfg");
+$tgsalida8 = exec("sed -n '5p' /var/www/html/hblink/status_regla8.cfg");
+$masterip8 = exec("sed -n '6p' /var/www/html/hblink/status_regla8.cfg");
+$puerto8 = exec("sed -n '7p' /var/www/html/hblink/status_regla8.cfg");
+$password8 = exec("sed -n '8p' /var/www/html/hblink/status_regla8.cfg");
+$options8 = exec("sed -n '9p' /var/www/html/hblink/status_regla8.cfg");
+
 $nombre9 = exec("sed -n '1p' /var/www/html/hblink/status_regla9.cfg");
 $demandapermanente9 = exec("sed -n '2p' /var/www/html/hblink/status_regla9.cfg");
 $tgconexion9 = exec("sed -n '3p' /var/www/html/hblink/status_regla9.cfg");
@@ -105,7 +125,7 @@ background-image: url(img/fondo_02.png);
     }  
 .color_verde_16{
     color:#21FF06;
-    font-size: 16px;
+    font-size: 14px;
     }    
 .fuente_boton{
     font-size:16px;
@@ -179,7 +199,7 @@ h6{
 <div class="container"> 
 <br><br>
 
-<!--============== CAJA EDITAR  REGLA 2, 3,4 ==================================================================-->   
+<!--============== CAJA EDITAR  REGLA 2, 3 y 4 ==================================================================-->   
 <div class="row">
     <div class="col-md-4 caja2"><br>     
         <h5>EDITAR REGLA 2</h5> 
@@ -191,7 +211,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla2.php">
         <input name="demandapermanente2" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente2;?></span>
             </div>             
 </form>
@@ -241,7 +261,7 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
 <!-- ====================================================================================================================== -->
@@ -256,7 +276,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla3.php">
         <input name="demandapermanente3" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente3;?></span>
             </div>             
 </form>
@@ -306,7 +326,7 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
 <!-- ====================================================================================================================== -->
@@ -321,7 +341,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla4.php">
         <input name="demandapermanente4" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente4;?></span>
             </div>             
 </form>
@@ -371,7 +391,7 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
 </div><!-- "row -->
@@ -397,7 +417,7 @@ h6{
 
 
 
-<!--============== CAJA EDITAR  REGLA 2, 3,4 ==================================================================-->   
+<!--============== CAJA EDITAR  REGLA 5,6 y 7 ==================================================================-->   
 <div class="row">
     <div class="col-md-4 caja2"><br>     
         <h5>EDITAR REGLA 5</h5> 
@@ -409,7 +429,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla5.php">
         <input name="demandapermanente5" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente5;?></span>
             </div>             
 </form>
@@ -459,7 +479,7 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
 <!-- ====================================================================================================================== -->
@@ -474,7 +494,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla6.php">
         <input name="demandapermanente6" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente6;?></span>
             </div>             
 </form>
@@ -524,9 +544,165 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
+<!-- ====================================================================================================================== -->
+
+<div class="col-md-4 caja4"><br>     
+        <h5>EDITAR REGLA 7</h5> 
+<form method="post" action="cambios_regla7.php">
+        <input name="nombre7" class="fuente_boton3 form-control" placeholder="Introduce Nombre + Enter">
+            <div class="fondo_datos">Nombre: 
+                <span class="color_verde"><?php echo $nombre7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="demandapermanente7" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
+            <div class="fondo_datos">Conexión : 
+                <span class="color_verde"><?php echo $demandapermanente7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="tgconexion7" class="fuente_boton3 form-control" placeholder="Introduce TG Conexión + Enter">
+            <div class="fondo_datos">TG Conexión: 
+                <span class="color_verde"><?php echo $tgconexion7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="tgdesconexion7" class="fuente_boton3 form-control" placeholder="Introduce TG Desconexión + Enter">
+            <div class="fondo_datos">NTG Desconexión: 
+                <span class="color_verde"><?php echo $tgdesconexion7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="tgsalida7" class="fuente_boton3 form-control" placeholder="Introduce TG Salida + Enter">
+            <div class="fondo_datos">TG Salida: 
+                <span class="color_verde"><?php echo $tgsalida7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="masterip7" class="fuente_boton3 form-control" placeholder="Introduce Address + Enter">
+            <div class="fondo_datos">Address: 
+                <span class="color_verde"><?php echo $masterip7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="puerto7" class="fuente_boton3 form-control" placeholder="Introduce Puerto + Enter">
+            <div class="fondo_datos">Puerto: 
+                <span class="color_verde"><?php echo $puerto7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="password7" class="fuente_boton3 form-control" placeholder="Introduce Password + Enter">
+            <div class="fondo_datos">Password: 
+                <span class="color_verde"><?php echo $password7;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla7.php">
+        <input name="options7" class="fuente_boton3 form-control" placeholder="Introduce Options + Enter">
+            <div class="fondo_datos"> 
+                <span class="color_verde_16"><?php echo $options7;?></span>
+            </div>             
+</form>
+<form method="post" action="aplicar_cambios_regla7.php">
+    <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
+</form>
+<form method="post" action="dashboard_sin_cambios.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
+</form>
+</div><!-- "col-md-4 -->
+</div><!-- "row -->
+<!-- ********************************************************************************************************-->
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--============== CAJA EDITAR  REGLA 8 y 9 ==================================================================-->   
+<div class="row">
+    <div class="col-md-4 caja2"><br>     
+        <h5>EDITAR REGLA 8</h5> 
+<form method="post" action="cambios_regla8.php">
+        <input name="nombre8" class="fuente_boton3 form-control" placeholder="Introduce Nombre + Enter">
+            <div class="fondo_datos">Nombre: 
+                <span class="color_verde"><?php echo $nombre8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="demandapermanente8" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
+            <div class="fondo_datos">Conexión : 
+                <span class="color_verde"><?php echo $demandapermanente8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="tgconexion8" class="fuente_boton3 form-control" placeholder="Introduce TG Conexión + Enter">
+            <div class="fondo_datos">TG Conexión: 
+                <span class="color_verde"><?php echo $tgconexion8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="tgdesconexion8" class="fuente_boton3 form-control" placeholder="Introduce TG Desconexión + Enter">
+            <div class="fondo_datos">NTG Desconexión: 
+                <span class="color_verde"><?php echo $tgdesconexion8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="tgsalida8" class="fuente_boton3 form-control" placeholder="Introduce TG Salida + Enter">
+            <div class="fondo_datos">TG Salida: 
+                <span class="color_verde"><?php echo $tgsalida8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="masterip8" class="fuente_boton3 form-control" placeholder="Introduce Address + Enter">
+            <div class="fondo_datos">Address: 
+                <span class="color_verde"><?php echo $masterip8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="puerto8" class="fuente_boton3 form-control" placeholder="Introduce Puerto + Enter">
+            <div class="fondo_datos">Puerto: 
+                <span class="color_verde"><?php echo $puerto8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="password8" class="fuente_boton3 form-control" placeholder="Introduce Password + Enter">
+            <div class="fondo_datos">Password: 
+                <span class="color_verde"><?php echo $password8;?></span>
+            </div>             
+</form>
+<form method="post" action="cambios_regla8.php">
+        <input name="options8" class="fuente_boton3 form-control" placeholder="Introduce Options + Enter">
+            <div class="fondo_datos"> 
+                <span class="color_verde_16"><?php echo $options8;?></span>
+            </div>             
+</form>
+<form method="post" action="aplicar_cambios_regla8.php">
+    <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
+</form>
+<form method="post" action="dashboard_sin_cambios.php">
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
+</form>
+</div><!-- "col-md-4 -->
+<!-- ====================================================================================================================== -->
+
+
 <!-- ====================================================================================================================== -->
 
 <div class="col-md-4 caja4"><br>     
@@ -539,7 +715,7 @@ h6{
 </form>
 <form method="post" action="cambios_regla9.php">
         <input name="demandapermanente9" class="fuente_boton3 form-control" placeholder="Introduce Demanda ó Permanente + Enter">
-            <div class="fondo_datos">Demanda ó Permanente: 
+            <div class="fondo_datos">Conexión : 
                 <span class="color_verde"><?php echo $demandapermanente9;?></span>
             </div>             
 </form>
@@ -589,12 +765,11 @@ h6{
     <button class="btn btn-warning btn-sm btn-block" type="submit">APLICAR Y GRABAR LOS CAMBIOS</button><br>
 </form>
 <form method="post" action="dashboard_sin_cambios.php">
-    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR SIN GRABAR LOS CAMBIOS</button><br>
+    <button class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button><br>
 </form>
 </div><!-- "col-md-4 -->
 </div><!-- "row -->
 <!-- ********************************************************************************************************-->
-
 </div><!-- container -->
 
     <!-- jQuery -->

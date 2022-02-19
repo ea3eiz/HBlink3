@@ -1,28 +1,28 @@
 <?php 
 session_start();
-$nombre9=($_POST["nombre9"]);
-$demandapermanente9=($_POST["demandapermanente9"]);
-$tgconexion9=($_POST["tgconexion9"]);
-$tgdesconexion9=($_POST["tgdesconexion9"]);
-$tgsalida9=($_POST["tgsalida9"]);
-$masterip9=($_POST["masterip9"]);
-$puerto9=($_POST["puerto9"]);
-$password9=($_POST["password9"]);
-$options9=($_POST["options9"]);
+$nombre7=($_POST["nombre7"]);
+$demandapermanente7=($_POST["demandapermanente7"]);
+$tgconexion7=($_POST["tgconexion7"]);
+$tgdesconexion7=($_POST["tgdesconexion7"]);
+$tgsalida7=($_POST["tgsalida7"]);
+$masterip7=($_POST["masterip7"]);
+$puerto7=($_POST["puerto7"]);
+$password7=($_POST["password7"]);
+$options7=($_POST["options7"]);
 
-$activa=exec("awk 'NR==9' /var/www/html/hblink/status_reglas.cfg");
+$activa=exec("awk 'NR==7' /var/www/html/hblink/status_reglas.cfg");
 
-if($activa == "REGLA9=ON"){
+if($activa == "REGLA7=ON"){
 
-exec("sudo sed -i '1c $nombre9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '2c $demandapermanente9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '3c $tgconexion9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '4c $tgdesconexion9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '5c $tgsalida9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '6c $masterip9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '7c $puerto9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '8c $password9' /var/www/html/hblink/status_regla9.cfg");
-exec("sudo sed -i '9c $options9' /var/www/html/hblink/status_regla9.cfg");
+exec("sudo sed -i '1c $nombre7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '2c $demandapermanente7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '3c $tgconexion7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '4c $tgdesconexion7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '5c $tgsalida7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '6c $masterip7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '7c $puerto7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '8c $password7' /var/www/html/hblink/status_regla7.cfg");
+exec("sudo sed -i '9c $options7' /var/www/html/hblink/status_regla7.cfg");
 
 header("Location:editar_reglas_cambios.php");	
 

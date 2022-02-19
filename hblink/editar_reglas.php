@@ -297,27 +297,6 @@ h6{
 <div class="container"> 
 <br><br>
 
-
-
-<div class="row">
-
-<div class="col-md-3"></div>
-<div class="col-md-6">
-<form method="post" action="editar_reglas_cambios.php">
-    <button style="font-size:18px;"class="btn btn-warning btn-sm btn-block" type="submit">CAMBIAR NOMBRE Y TGS A LAS REGLAS</button>
-</form>
-</div>
-
-</div><!-- row -->
-
-
-<br><br>
-
-
-
-
-
-
 <div class="row">
 
 <div class="col-md-6">
@@ -328,7 +307,7 @@ h6{
 
 <div class="col-md-6">
 <form method="post" action="dashboard_sin_cambios.php">
-    <button style="font-size:18px;"class="btn btn-success btn-sm btn-block" type="submit">VOLVER AL DASHBOARD SIN CAMBIOS</button>
+    <button style="font-size:18px;"class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DSHBOARD</button>
 </form>
 </div>
 
