@@ -69,7 +69,7 @@ BRIDGES = {
         #regla 5
 ],  
 'DMR+21465': [
-{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [21465], 'OFF': [821465], 'RESET': []},
+{'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 4025, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [4025], 'OFF': [84025], 'RESET': []},
 {'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
