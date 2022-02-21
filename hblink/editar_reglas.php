@@ -307,7 +307,7 @@ h6{
 
 <div class="col-md-6">
 <form method="post" action="dashboard_sin_cambios.php">
-    <button style="font-size:18px;"class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DSHBOARD</button>
+    <button style="font-size:18px;"class="btn btn-success btn-sm btn-block" type="submit">SALIR Y VOLVER AL DASHBOARD</button>
 </form>
 </div>
 
