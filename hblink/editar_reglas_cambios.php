@@ -301,9 +301,19 @@ h6{
 
 <!--============== CAJA EDITAR  REGLA 2, 3 y 4 ==================================================================-->   
 <br>
+<div class="row">
+    <div class="col-md-6">
 <form method="post" action="aplicar_cambios_en_todas_las_reglas.php">
-    <button style="color:#fff;" class="btn btn-danger btn-md btn-block" type="submit">VOLVER AL DASHBOARD APLICANDO Y GRABANDO TODOS LOS CAMBIOS</button>
+    <button style="color:#fff;" class="btn btn-warning btn-md btn-block" type="submit">VOLVER AL DASHBOARD APLICANDO Y GRABANDO TODOS LOS CAMBIOS</button>
 </form>
+    </div>
+
+    <div class="col-md-6">
+<form method="post" action="dashboard_sin_cambios.php">
+    <button style="color:#fff;" class="btn btn-danger btn-md btn-block" type="submit">VOLVER AL DASHBOARD SIN CAMBIOS</button>
+</form>
+    </div>
+</div><!-- row -->
 <br>
 <div class="row">
     <div class="col-md-3 thumbnail_negro">     
