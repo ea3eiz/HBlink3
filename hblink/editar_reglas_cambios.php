@@ -304,7 +304,7 @@ h6{
 <div class="row">
     <div class="col-md-6">
 <form method="post" action="aplicar_cambios_en_todas_las_reglas.php">
-    <button style="color:#fff;" class="btn btn-warning btn-md btn-block" type="submit">VOLVER AL DASHBOARD APLICANDO Y GRABANDO TODOS LOS CAMBIOS</button>
+    <button style="color:#fff;" class="btn btn-warning btn-md btn-block" type="submit">GRABAR TODOS LOS CAMBIOS Y VOLVER AL DASHBOARD</button>
 </form>
     </div>
 
